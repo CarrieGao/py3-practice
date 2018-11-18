@@ -11,12 +11,7 @@ def trim1(s):
     #     s = s[len(head):]
     # else:
     #     print ('can\'t not match reg')
-    if s[:1] != ' ' and s[-1:] != ' ':
-        return s
-    elif s[:1] != ' ':
-        return trim1(s[1:])
-    else:
-        return trim1(s[:-1])
+    return trim1(s[:-1])
 
 def trim(s):
     if s[:1] != ' ' and s[-1:] != ' ':
